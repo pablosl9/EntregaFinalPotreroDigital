@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Etiquetas meta para SEO -->
+    <meta
+      name="description"
+      content="Podes ver nuestros Trabajos de Alta Calidad, Tambien Videos del Proceso de alguno de ellos!!"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, SASS, Frameworks, Bordados, Saranghae, Anime, Manga"
+    />
+    <!-- Link a la fuente ultilizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- Link de mi CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Titulo -->
+    <title>Galeria - Saranghae Bordados</title>
+  </head>
+
+  <body>
+    <!-- Navbar con Bootstrap -->
+    <header class="d-flex justify-content-around">
+      <nav class="navbar navbar-expand-lg bg-menu col-12">
+        <div class="container-fluid">
+          <a
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+            "
+            class="navbar-brand"
+            href="../index.html"
+            ><img
+              class="logo-superior"
+              src="../img/Logo.jpeg"
+              alt="Logo de Saranghae Bordados, personaje de one piece Sanji"
+            />
+          </a>
+          <h1 style="padding-right: 4rem">Galeria</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item footer">
+                <a class="nav-link active" href="#pie-de-pagina"
+                  >Ir al Footer</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/informacion.html"
+                      >Informacion</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/galeria.html"
+                      >Galeria</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/hacer un pedido.html"
+                  >Hacer un Pedido</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/registrarse.html"
+                  >Registrarse/Ingresar</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 style="margin: 2rem" class="subtitulos">
+          Aqui pueden encontrar ejemplos de mi Trabajo
+        </h2>
+
+        <!-- Carrusel hecho con Bootstrap con una galeria de bordados personalizados ya realizados-->
+        <div
+          id="carouselExampleIndicators"
+          class="galeria carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="8"
+              aria-label="Slide 9"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="9"
+              aria-label="Slide 10"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="10"
+              aria-label="Slide 11"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="11"
+              aria-label="Slide 12"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="12"
+              aria-label="Slide 13"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="13"
+              aria-label="Slide 14"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="14"
+              aria-label="Slide 15"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="15"
+              aria-label="Slide 16"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="16"
+              aria-label="Slide 17"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="17"
+              aria-label="Slide 18"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="18"
+              aria-label="Slide 19"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="19"
+              aria-label="Slide 20"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="20"
+              aria-label="Slide 21"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="21"
+              aria-label="Slide 22"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="22"
+              aria-label="Slide 23"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="23"
+              aria-label="Slide 24"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../img/bordado-cinco.jpeg"
+                class="foto d-block"
+                alt="bordado personajes de devilman crybaby, ryo y akira"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-cuatro.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de dr stone, suika"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-diecinueve.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de one piece, ace"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-dieciocho.jpeg"
+                class="foto d-block"
+                alt="bordado personajes de my hero academy, izuku y bakugo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-diecisiete.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de demon slayer, tanjiro kamado"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-doce.jpeg"
+                class="foto d-block"
+                alt="bordado personajes del manga doukyuusei, sajou y kusakabe"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-seis.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de dr stone, senku"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-siete.jpeg"
+                class="foto d-block"
+                alt="bordado personajes de inuyasha, inuyasha y aome"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-ocho.jpeg"
+                class="foto d-block"
+                alt="bordado personajes de inuyasha, inuyasha y aome"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-once.jpeg"
+                class="foto d-block"
+                alt="bordado personajes de heartstopper, charlie y nick"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-tres.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de demon slayer, Muichiro Tokito"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-uno.jpeg"
+                class="foto d-block"
+                alt="bordado personaje del anime Fruits Basket, Kyo Sohma"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veinte.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de tokyo revenger, chifuyu"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintiuno.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de tokyo revenger, chifuyu, takemichi y baji"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veinticinco.jpg"
+                class="foto d-block"
+                alt="bordado personaje de tokyo revenger, sano manjiro"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veinticuatro.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de demon slayer, tanjiro kamado"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintidos.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de demon slayer,rengoku"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintinueve.jpg"
+                class="foto d-block"
+                alt="bordado personaje attack on titan, levi ackerman"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintiocho.jpg"
+                class="foto d-block"
+                alt="bordado personaje hunterxhunter, killua"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-treinta.jpg"
+                class="foto d-block"
+                alt="bordado personaje de demon slayer, tanjiro kamado"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-treintaydos.jpeg"
+                class="foto d-block"
+                alt="bordado personaje my hero academy, bakugo"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-treintaytres.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de Haikyuu, Kenma y Hinata"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintiseis.jpg"
+                class="foto d-block"
+                alt="bordado personaje de dr stone, nanami ryusui"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../img/bordado-veintitres.jpeg"
+                class="foto d-block"
+                alt="bordado personaje de one piece, sanji"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="galeria-videos">
+        <h2 style="margin: 2rem" class="titulo-videos subtitulos">
+          Y aqui encontraran el proceso de mis bordados
+        </h2>
+
+        <!-- Videos de TikTok mostrando el proceso de los bordados -->
+        <blockquote
+          class="video-uno tiktok-embed"
+          cite="https://www.tiktok.com/@saranghae.4u/video/7091048000771951873"
+          data-video-id="7091048000771951873"
+          style="max-width: 605px; min-width: 325px"
+        >
+          <section>
+            <a
+              target="_blank"
+              title="@saranghae.4u"
+              href="https://www.tiktok.com/@saranghae.4u"
+              >@saranghae.4u</a
+            >
+            <a
+              title="heartstopper"
+              target="_blank"
+              href="https://www.tiktok.com/tag/heartstopper"
+              >#heartstopper</a
+            >
+            <a
+              title="charliespring"
+              target="_blank"
+              href="https://www.tiktok.com/tag/charliespring"
+              >#charliespring</a
+            >
+            <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp"
+              >#fyp</a
+            >
+            <a
+              title="embroidery"
+              target="_blank"
+              href="https://www.tiktok.com/tag/embroidery"
+              >#embroidery</a
+            >
+            @Alice Oseman
+            <a
+              target="_blank"
+              title="♬ original sound - Molly"
+              href="https://www.tiktok.com/music/original-sound-7044270595718105862"
+              >♬ original sound - Molly</a
+            >
+          </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+
+        <blockquote
+          class="video-dos tiktok-embed"
+          cite="https://www.tiktok.com/@saranghae.4u/video/7100978138578013446"
+          data-video-id="7100978138578013446"
+          style="max-width: 605px; min-width: 325px"
+        >
+          <section>
+            <a
+              target="_blank"
+              title="@saranghae.4u"
+              href="https://www.tiktok.com/@saranghae.4u"
+              >@saranghae.4u</a
+            >
+            💗
+            <a
+              title="embroidery"
+              target="_blank"
+              href="https://www.tiktok.com/tag/embroidery"
+              >#embroidery</a
+            >
+            <a
+              title="doukyuusei"
+              target="_blank"
+              href="https://www.tiktok.com/tag/doukyuusei"
+              >#doukyuusei</a
+            >
+            <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp"
+              >#fyp</a
+            >
+            <a
+              title="handmade"
+              target="_blank"
+              href="https://www.tiktok.com/tag/handmade"
+              >#handmade</a
+            >
+            <a
+              title="mangaart"
+              target="_blank"
+              href="https://www.tiktok.com/tag/mangaart"
+              >#mangaart</a
+            >
+            <a
+              target="_blank"
+              title="♬ try again - ‘•.¸♡♡¸.•’"
+              href="https://www.tiktok.com/music/try-again-7070966762300361514"
+              >♬ try again - ‘•.¸♡♡¸.•’</a
+            >
+          </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+      </section>
+    </main>
+
+    <!-- Pie de Pagina -->
+    <footer id="pie-de-pagina">
+      <h3 class="derechos">©Todos los Derechos Reservados</h3>
+      <ul class="ff">
+        <li class="pago">
+          <a href="../pages/medios de pago.html">
+            <h3>Medios de Pago</h3>
+          </a>
+        </li>
+        <li class="preguntas">
+          <a href="../pages/preguntas frecuentes.html">
+            <h3>Preguntas Frecuentes</h3>
+          </a>
+        </li>
+      </ul>
+
+      <img
+        class="logo"
+        src="../img/Logo.jpeg"
+        alt="Logo de Saranghae, personaje de anime one piece llamado Sanji"
+      />
+      <img
+        class="gato"
+        src="../img/gato.gif"
+        alt="gif de gatito con arcoiris"
+      />
+    </footer>
+
+    <!-- Script de js Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

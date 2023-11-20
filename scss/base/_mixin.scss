@@ -1,0 +1,6 @@
+// mixin para medidas de las imagenes 
+
+@mixin medidas-galeria($max-width, $max-height){
+    max-width: $max-width;
+    max-height: $max-height;
+}

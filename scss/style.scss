@@ -1,0 +1,365 @@
+@import "base/variables";
+@import "base/mapas";
+@import "base/mixin";
+@import "base/extend";
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del Body */
+body{
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/Fondo.jpg);
+}
+
+/* Estilo del Header version mobile */
+header{
+    top: 0;
+    height: auto;
+    display: block;
+    background-color: $color-principal;
+    margin-bottom: 1rem;
+    h1{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+/* Estilo del Logo Superior*/
+// incluyendo el mixin de medidas
+.logo-superior{
+    border-radius: 4rem;
+    @include medidas-galeria(4rem, 4rem);
+}
+
+/* Estilo de cada etiqueta p */
+.parrafo{
+    display: block;
+    grid-area: parrafo;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+/* Clase para ocultar el carrusel del index en la version mobile */
+.ocultar{
+    display: none;
+}
+/* Modificando la medida de la imagen de sanji que se transforma en la version desktop*/
+// incluyedo el mixin de medidas
+.mover{
+    @include medidas-galeria(10rem, 10rem);
+}
+.pagos{
+    margin-top: 2rem;
+    @include medidas-galeria(22rem, 22rem);
+}
+.annie{
+    @include medidas-galeria(22rem, 22rem);
+}
+.sasha{
+    padding-bottom: 1rem;
+    @include medidas-galeria(22rem, 22rem);
+}
+/*Animacion del personaje levi para que se deslice*/
+.levi{
+    @include medidas-galeria(28rem, 28rem);
+    animation-duration: 2s;
+    animation-name: deslizar;
+}
+@keyframes deslizar{
+    from {
+      margin-right: 500%;
+      width: 300%
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+}
+
+/* Modificando el Footer con Grid */
+//incluyendo variables
+footer{
+    height: auto;
+    h3{
+        font-size: 1rem;
+    }
+    background-color: $color-principal;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logo derechos"
+                         "logo preguntas"
+                         "logo pago";
+    
+    @extend %center;
+    .ff{
+        list-style: none;
+    }
+    .derechos{
+        padding-top: 1rem;
+        text-align: center;
+        grid-area: derechos;
+        font-size: 1.2rem;
+    }
+    .preguntas{
+        text-align: center;
+        grid-area: preguntas;
+        font-size: 1.2rem;
+    }
+    .pago{
+        text-align: center;
+        grid-area: pago;
+        font-size: 1.2rem;
+    }
+    .logo{
+        border-radius: 4rem;
+        grid-area: logo;
+        @include medidas-galeria(8rem, 8rem);
+    }
+}
+
+/* Centrando el carrusel de la Galeria*/
+.galeria{
+    display: grid;
+    @extend %center;
+}
+// incluyendo el mixin de medidas
+.foto{
+    @include medidas-galeria(22rem, 22rem);
+}
+
+/*Centrando los Subtitulos y engrosando su fuente*/
+.subtitulos{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Dandole un padding y tamaño a la fuente de los formularios*/
+.formularios{
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+//incluyendo mixin de medidas
+.ig{
+    @include medidas-galeria(4rem, 4rem);
+}
+.tiktok{
+    @include medidas-galeria(4rem, 4rem);
+}
+.fb{
+    @include medidas-galeria(4rem, 4rem);
+}
+/* ocultando a la animaciones de sanji y el gato de la version mobile */
+.sanji{
+    display: none;
+}
+.gato{
+    display: none;
+}
+/* Media Queries */
+@media screen and (min-width:600px){
+    /* dando un mayor tamaño a las fuentes*/
+    header h1{
+        font-size: 3rem;
+    }
+    header nav ul li{
+        font-size: 1.5rem;
+    }
+    /* Mostrando el carrusel del index */
+    .ocultar{
+        display: block;
+    }
+    /* Cambiando el tamaño de las imagenes */
+    .pagos{
+        margin-top: 2rem;
+        @include medidas-galeria(45rem, 45rem);
+    }
+    .annie{
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .sasha{
+        padding-bottom: 1rem;
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .levi{
+        @include medidas-galeria(28rem, 28rem);
+    }
+    .foto{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .ig{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    .tiktok{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    .fb{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    /* Cambiando el tamaño de la fuente */
+    footer{
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+/* Media Queries Version Desktop*/
+@media screen and (min-width:1024px){
+    /* Cambiando el Tamaño del logo(header) */
+    .logo-superior{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    /* Agregando estilos al header*/
+    header{
+        background-color: $color-principal;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex; 
+        flex-direction: row;
+    }
+    .formularios{
+        padding: 4rem;
+    }
+    /* Cambiando el tamaño de la fuente */
+    .usuario{
+        font-size: 1.5rem;
+    }
+    /* Cambiando el tamaño de las imagenes */
+    .pagos{
+        margin-top: 2rem;
+        @include medidas-galeria(45rem, 45rem);
+    }
+    .annie{
+        padding-top: 4rem;
+        @include medidas-galeria(32rem, 32rem);
+    }
+    .sasha{
+        padding-bottom: 1rem;
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .levi{
+        @include medidas-galeria(28rem, 28rem);
+    }
+    .foto{
+        @include medidas-galeria(50rem, 50rem);
+    }
+
+    /* Cambiando la ubicacion de los elementos en la galeria con Grid */
+    .galeria-videos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "titulo-videos titulo-videos"
+                             "video-uno video-dos";
+                             
+        .titulo-videos{
+            grid-area: titulo-videos;
+        }
+        .video-uno{
+            grid-area: video-uno;
+        }
+        .video-dos{
+            grid-area: video-dos;
+        }
+    }
+
+    /* Agregando animacion al Footer y posicionando de manera diferente el footer con grid */
+    footer{
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: $color-principal;
+        margin-top: 3rem;
+        display: flex;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "logo derechos gato"
+                             "logo preguntas gato"
+                             "logo pago gato";
+        .ff{
+            list-style: none;
+        }
+        .derechos{
+            grid-area: derechos;
+        }
+        .preguntas{
+            grid-area: preguntas;
+        }
+        .pago{
+            grid-area: pago;
+        }
+        .logo{
+            border-radius: 4rem;
+            grid-area: logo;
+            @include medidas-galeria(8rem, 8rem);
+        }
+        .gato{
+            grid-area: gato;
+            display: block;
+            @include medidas-galeria(22rem, 22rem);
+            animation-duration: 7s;
+            animation-name: slide;
+        }
+        @keyframes slide {
+            from {
+              margin-right: 500%;
+              width: 300%
+            }
+          
+            to {
+              margin-right: 0%;
+              width: 100%;
+            }
+          }
+    }
+
+    /* Cambiando y Transformando a Sanji de la seccion de Contacto*/
+    .mover{
+        @include medidas-galeria(30rem, 30rem);
+    }
+    .mover:hover{
+        transform: rotate(335deg);
+    }
+    /*Agregando animacion para Sanji de la seccion de Informacion */
+    .sanji{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 5rem;
+    }
+    .aparecer{
+        @include medidas-galeria(30rem, 30rem);
+        animation-name: aparecer;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes aparecer{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1.3);
+        }
+    }
+    /*Cambiando el tamaño de las imagennes de las Redes Sociales*/
+    .ig{
+        @include medidas-galeria(7rem, 7rem);
+    }
+    .tiktok{
+        @include medidas-galeria(7rem, 7rem);
+    }
+    .fb{
+        @include medidas-galeria(7rem, 7rem);
+    }
+}
